@@ -93,8 +93,7 @@ Automated tracing were shown as a result of predicted segmentation. Based on the
 
 **B. Threshold-based Segmentation:** Classifying objects based on pixel intensity level.
 
-<img width="729" alt="Screenshot 2023-06-10 at 10 32 21 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/ba921211-ed11-498a-874a-34edb587a5bf">
-
+<img width="737" alt="Screenshot 2023-06-12 at 3 06 09 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/6bdd8509-4ba2-41aa-844f-5481f6de8d67">
 
 ***Figure 9. Auto-thresholding segmentation.*** TomoSegMemTV was performed to detect membranous areas on cryoCARE predicted tomogram. TomoSegMemTV, a toolkit designed to perform object detection by utilizing Tensor Voting algorithm was able to detect higher intensity areas while discarding the rest by adjusting thresholding values.
 
