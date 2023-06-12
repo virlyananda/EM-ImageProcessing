@@ -115,6 +115,8 @@ Manual segmentation | ~5hr/tomogram | ~30 min/tomogram
 
 <img width="831" alt="Screenshot 2023-06-12 at 3 00 47 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/1f3605fd-e860-4236-ae42-25f29fb97473">
 
+![image (53)](https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/24c3c635-4707-4523-aea6-1a42a081aa78)
+***Figure 11. Label format on Amira.***
 
 Our refinement method is described as follows: <br>
 * **Segmentation Label(s)**: This is normally a 2D binary format where objects are classified on each slices of the tomogram. You may adjust various sizes and coordinates with this file on any 3D visualization software. Once sizes and coordinates are adjusted, you can generate this as 3D surface(volume rendering).
