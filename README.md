@@ -132,3 +132,17 @@ Convert surfaces to .STL or .obj format.
 
 **Viewing Labels on other 3D software/toolkits** <br>
 Convert Amira labels to .MRC format.>
+
+### **Step 3: Template Matching (Ribosome Localization)** ###
+Locating macromolecules such as ribosome can be done on a tomogram. We performed template matching on a single-particle (SP) cryo-EM ribosome on one of our tomograms through MATLAB-based Dynamo platform.
+
+
+Data | Description | Voxel Size
+----------|-------------|-----------
+Ribosome | EMD-2847 | 0.75525 Å
+Tomogram | Ecoli WT | 10.26 Å
+
+<img width="854" alt="Screenshot 2023-06-12 at 4 04 06 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/0a999203-c79c-4fe0-9416-ca2d94fbfb35">
+
+***Figure 12. Visualization objective.*** 
+To be continued...
