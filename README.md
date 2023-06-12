@@ -78,7 +78,7 @@ To generate 3D renderings of ROIs, segmentations are normally performed to parti
 #### **Types of Segmentations** ####
 **A. Semantic Segmentations**: Classify objects by the average value of their pixel characteristics. <br>
 
-<img width="740" alt="Screenshot 2023-06-12 at 3 02 52 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/71735e45-2e90-4bba-974f-b50aa697e619">
+<img width="662" alt="Screenshot 2023-06-12 at 3 04 59 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/8ab683a4-9b8d-4ea3-8d37-e12ea4465930">
 
 ***Figure A. Objects are manually hand-segmented (traced) to classify each label.*** This procedure was repeated on 3 slices out of 249 slices on cryoCARE predicted restored tomogram.
 
