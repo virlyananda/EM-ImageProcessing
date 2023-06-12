@@ -66,9 +66,7 @@ Laborious Segmentation  | Amira (Pixel-based Classification)
 ### ***General Procedure*** ##
 Before generating volume images (tomogram), fractions (frames) are normally acquired from the microscope by tilting the sample in certain angles. These fractions are then processed through 3D reconstruction software (IMOD) in order to produce a tomogram.
 
-![Alt text][def]
-
-[def]: <Screenshot 2023-06-12 at 10.33.14 AM.png>
+<img width="807" alt="Screenshot 2023-06-12 at 10 33 14 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/e8bfca57-737a-48d7-8e36-27d1055e95f5">
 
 ***Figure 1. General 3D reconstruction procedure.***
 Common procedure done after 3D reconstructions (tomogram) were performed. Additional filtering (denoising) is applied after tomogram has been generated.
@@ -83,7 +81,7 @@ We optimized the general procedure to obtain more accurate results for our datas
 
 These even and odd fractions were then aligned and reconstructed to produce its corresponded tomogram. As a result, we feed cryoCARE image restoration training with localized unbiased even and odd tomograms.
 
-![Alt text](<Screenshot 2023-06-12 at 10.33.53 AM.png>)
+<img width="918" alt="Screenshot 2023-06-12 at 10 33 53 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/d269465b-3bff-46e4-8d59-e0719d595c1a">
 
 ***Figure 2. In-house tomogram restoration pipeline.*** Frames (fractions) were generated in full and were later split into even and odd. Even and odd 2D stacks were then aligned and 3D reconstructed through IMOD. Training was performed on floating-point image (tomogram) data type.<br>
 *Source: Virly Y. Ananda*
@@ -91,10 +89,10 @@ These even and odd fractions were then aligned and reconstructed to produce its 
 Even and odd tomograms were then feed into cryoCARE where Noise2Noise framework is applied to reduce noise from each tomogram. The program would then construct a finalized tomogram with the most reduced noise.
 
 **Comparison of Tomogram Restoration**
-![
-](<Screenshot 2023-06-09 at 9.12.30 PM.png>)
+
 ***Figure 3. Comparison of tomogram restorations through machine learning-based denoising platform.***(Left) Topaz Denoise3D prediction, (middle) raw tomogram, and (right) cryoCARE prediction. Tomograms were binned by 4.
 *Tomogram Acquisition: Paula P. Navarro*
+<img width="1363" alt="Screenshot 2023-06-09 at 9 12 30 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/2c918b2c-4e4f-4cbe-b40f-79b354f066e2">
 
 Based on both predicted models, we noticed cryoCARE seems to show a more normalized contrast where ROIs are highlighted and background seems to be dampened. Topaz on the other hand seems to show high intensity of contrast on ROIs and certain artifacts while background is dampened as well.
 
@@ -113,8 +111,8 @@ To generate 3D renderings of ROIs, segmentations are normally performed to parti
 
 #### **Types of Segmentations** ####
 **A. Semantic Segmentations**: Classify objects by the average value of their pixel characteristics. <br>
+<img width="678" alt="Screenshot 2023-06-12 at 10 49 56 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/16611ec5-8f66-436d-8bc8-d0c50f3b7e73">
 
-![Alt text](<Screenshot 2023-06-12 at 10.49.56 AM.png>)
 
 ***Figure A. Objects are manually hand-segmented (traced) to classify each label.*** This procedure was repeated on 3 slices out of 249 slices on cryoCARE predicted restored tomogram.
 
@@ -126,15 +124,18 @@ To generate 3D renderings of ROIs, segmentations are normally performed to parti
 Automated tracing were shown as a result of predicted segmentation. Based on the result, we could see it was able to correctly trace the outer membrane area.
 
 ***Figure E. Segmented prediction all objects.*** As we generate 3D surface of all the segmented slices on the tomogram, we found only a few false positives and false negatives. These outliers were later refined by implementing lasso deletion across slices and manual tracing to fill out the false negatives.
-<img width="807" alt="Screenshot 2023-06-12 at 10 33 14 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/b0c42d2c-1f7d-4c78-a829-5cdf5096883d">
 
 **B. Threshold-based Segmentation:** Classifying objects based on pixel intensity level.
-![Alt text](<Screenshot 2023-06-10 at 10.32.21 AM.png>)
+
+<img width="729" alt="Screenshot 2023-06-10 at 10 32 21 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/ba921211-ed11-498a-874a-34edb587a5bf">
+
 
 ***Figure 9. Auto-thresholding segmentation.*** TomoSegMemTV was performed to detect membranous areas on cryoCARE predicted tomogram. TomoSegMemTV, a toolkit designed to perform object detection by utilizing Tensor Voting algorithm was able to detect higher intensity areas while discarding the rest by adjusting thresholding values.
 
 **C. Manual Segmentation:** Classifying objects manually by hand tracing.<br>
-![Alt text](<Screenshot 2023-06-10 at 10.15.16 AM.png>)
+
+<img width="457" alt="Screenshot 2023-06-10 at 10 15 16 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/894ac103-6082-4aa4-a83f-8e95f58da75b">
+
 
 ***Figure 10. Manual segmentation in refining 3D surfaces.*** Mitochondrial sub-compartments (inter membrane space in pink, crista lumen in magenta, and matrix in translucent grey). Manual segmentation is normally done on every 5 slices to maximize tracing interpolation across Z stacks. Surfaces were then generated, triangulations simplified, re-meshed, and smoothened on Amira.
 
@@ -147,7 +148,8 @@ TomoSegMemTV  | ~1hr/tomogram | ~1 hr/tomogram |
 Manual segmentation | ~5hr/tomogram | ~30 min/tomogram
 
 **Refinement Method** <br>
-![Alt text](<Screenshot 2023-06-12 at 1.33.54 PM.png>)
+
+<img width="827" alt="Screenshot 2023-06-12 at 1 33 54 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/2a6c4f46-f43b-4851-a6ed-df120681d798">
 
 Our refinement method is described as follows: <br>
 * **Segmentation Label(s)**: This is normally a 2D binary format where objects are classified on each slices of the tomogram. You may adjust various sizes and coordinates with this file on any 3D visualization software. Once sizes and coordinates are adjusted, you can generate this as 3D surface(volume rendering).
