@@ -27,7 +27,6 @@ Laborious Segmentation  | Amira (Pixel-based Classification)
 
 ******
 
-******
 ### **Step 1: Volume Image (Tomogram) Restoration** ###
 
 ### ***General Procedure*** ##
