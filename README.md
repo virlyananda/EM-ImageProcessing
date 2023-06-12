@@ -78,8 +78,8 @@ To generate 3D renderings of ROIs, segmentations are normally performed to parti
 
 #### **Types of Segmentations** ####
 **A. Semantic Segmentations**: Classify objects by the average value of their pixel characteristics. <br>
-<img width="678" alt="Screenshot 2023-06-12 at 10 49 56 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/16611ec5-8f66-436d-8bc8-d0c50f3b7e73">
 
+<img width="740" alt="Screenshot 2023-06-12 at 3 02 52 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/71735e45-2e90-4bba-974f-b50aa697e619">
 
 ***Figure A. Objects are manually hand-segmented (traced) to classify each label.*** This procedure was repeated on 3 slices out of 249 slices on cryoCARE predicted restored tomogram.
 
@@ -101,8 +101,7 @@ Automated tracing were shown as a result of predicted segmentation. Based on the
 
 **C. Manual Segmentation:** Classifying objects manually by hand tracing.<br>
 
-<img width="457" alt="Screenshot 2023-06-10 at 10 15 16 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/894ac103-6082-4aa4-a83f-8e95f58da75b">
-
+<img width="427" alt="Screenshot 2023-06-12 at 3 01 41 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/c624670a-6963-482a-9f3a-0736b509e5e5">
 
 ***Figure 10. Manual segmentation in refining 3D surfaces.*** Mitochondrial sub-compartments (inter membrane space in pink, crista lumen in magenta, and matrix in translucent grey). Manual segmentation is normally done on every 5 slices to maximize tracing interpolation across Z stacks. Surfaces were then generated, triangulations simplified, re-meshed, and smoothened on Amira.
 
@@ -116,7 +115,8 @@ Manual segmentation | ~5hr/tomogram | ~30 min/tomogram
 
 **Refinement Method** <br>
 
-<img width="827" alt="Screenshot 2023-06-12 at 1 33 54 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/2a6c4f46-f43b-4851-a6ed-df120681d798">
+<img width="831" alt="Screenshot 2023-06-12 at 3 00 47 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/1f3605fd-e860-4236-ae42-25f29fb97473">
+
 
 Our refinement method is described as follows: <br>
 * **Segmentation Label(s)**: This is normally a 2D binary format where objects are classified on each slices of the tomogram. You may adjust various sizes and coordinates with this file on any 3D visualization software. Once sizes and coordinates are adjusted, you can generate this as 3D surface(volume rendering).
