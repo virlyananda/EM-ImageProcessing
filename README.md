@@ -26,39 +26,6 @@ Laborious Segmentation  | Amira (Pixel-based Classification)
 * Conda environment (Python 3.8 or above) [8]
 
 ******
-### **Step 1: Volume Image (Tomogram) Restoration** ###
-
-### ***General Procedure*** ##
-Before generating volume images (tomogram), fractions (frames) are normally acquired from the microscope by tilting the sample in certain angles. These fractions are then processed through 3D reconstruction software (IMOD) in order to produce a tomogram.
-
-![Alt text][def]
-
-[def]: <# Cryo-Electron Tomography (ET) Image Processing #
-Authors: Virly Y. Ananda, Paula P. Navarro<br>Date: 06/09/2023<br>Affiliation: Massachusetts General Hospital, Department of Molecular Biology
-
-Cryo-Electron Tomography (ET) is a subfield of Cryo-Electron Microscopy (EM) where images are tilted during acquisition to form a three-dimensional visualization of the specimen. While this technique has been around to study organelles biological formations in native condition, volume images (tomogram) produced by Cryo-ET also came with major issues that limit our interpretation of the data. However, due to certain side effects caused during image acquisition, additional computational processing are necessary to obtain accurate analysis.
-
-This documentation provides a complete walkthrough on how volume images (tomogram) are processed to efficiently generate 3D surface of regions of interest after image acquisitions are performed.
-
-
-Limitation  | Solution
-------------- | -------------
-Low-SNR  | cryoCARE
-Laborious Segmentation  | Amira (Pixel-based Classification)
-
-**Hardware Requirements***
-* GPUs with NVIDIA CUDA platform
-* Linux OS
-
-**Software Requirements***
-* IMOD(3DMOD) [1]
-* cryoCARE [2]
-* isoNET (Optional) [3]
-* Amira ThermoFisher [4]
-* MATLAB (Dynamo) [5]
-* ChimeraX (ArtiaX) [6]
-* TomoSegMemTV [7]
-* Conda environment (Python 3.8 or above) [8]
 
 ******
 ### **Step 1: Volume Image (Tomogram) Restoration** ###
