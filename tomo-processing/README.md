@@ -18,7 +18,7 @@ We implemented 2D stacks alignment with **IMOD** and split our fractions with **
 
 On terminal, simply run like the example shown below: <br>
 
-**bash GenerateStacks.sh** **-m** cryoCARE.mdoc **-s** stack_MC.mrc **-b** 8,2 **-g** /store0/navarro/data/raw/tomography/cryo-FIB/bacteria/corynie/PaulaNavarro_20220908_PAU_3/GainsBackup2022-09-08/gain_flipx.dm4 **-o** output_test **-S** 5760,4092 **-p** 2.705,2.705,2.705 **-I** /store0/navarro/data/raw/tomography/cryo-FIB/bacteria/corynie/Fractions/L12_Pos1/imod **-M** stack_MC
+**bash GenerateStacks.sh** **-m** [mdocfile].mdoc **-s** [stackname].mrc **-b** 8,2 **-g** [gainreffile].dm4 **-o** [output_directory] **-S** [sizeY,sizeX] **-p** [A,A,A] **-I** [pathwaytoIMODfile] **-M** [imodfilenames]
 
 ### **Construct Even and Odd Tomograms** ###
 
