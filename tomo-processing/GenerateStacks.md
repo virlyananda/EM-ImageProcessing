@@ -8,8 +8,9 @@ Aligning 2D stacks after fractions(frames) acquisitions can be processed differe
 
 We implemented 2D stacks alignment with **IMOD** and split our fractions with ***alignframes*** which we embedded onto our bash scripts.
 
-[Insert screenshot here]
+<img width="710" alt="Screenshot 2023-06-13 at 2 07 14 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/484ce348-8cdf-4ff3-ae42-2fd809e1d719">
 
+<br>
 ***Walkthrough*** <br>
 
 On terminal, simply run like the example shown below: <br>
