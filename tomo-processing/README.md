@@ -11,8 +11,11 @@ We implemented 2D stacks alignment with **IMOD** and split our fractions with **
 <img width="710" alt="Screenshot 2023-06-13 at 2 07 14 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/484ce348-8cdf-4ff3-ae42-2fd809e1d719">
 
 <br>
-***Walkthrough*** <br>
+
+**Walkthrough**
 
 On terminal, simply run like the example shown below: <br>
 
 **bash GenerateStacks.sh** **-m** cryoCARE.mdoc **-s** stack_MC.mrc **-b** 8,2 **-g** /store0/navarro/data/raw/tomography/cryo-FIB/bacteria/corynie/PaulaNavarro_20220908_PAU_3/GainsBackup2022-09-08/gain_flipx.dm4 **-o** output_test **-S** 5760,4092 **-p** 2.705,2.705,2.705 **-I** /store0/navarro/data/raw/tomography/cryo-FIB/bacteria/corynie/Fractions/L12_Pos1/imod **-M** stack_MC
+
+*If your stacks do not need further adjustment (e.g., exclude views), you may use GenerateStacks.sh. Otherwise, please go over the step-by-step scripts.
