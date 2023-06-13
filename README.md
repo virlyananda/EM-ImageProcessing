@@ -45,7 +45,6 @@ The pipeline shown above is commonly used when no training is involved during pr
 We performed transfer learning based denoising platform from Topaz where pre-model has been trained. As a result, we only needed to input our original tomogram into the program for Topaz to predict the denoised (restored) tomogram.
 
 ### ***Our Procedure*** ###
-References: tomo-processing
 We optimized the general procedure to obtain more accurate results for our dataset. To avoid beam-based contrast that causes bias when frames are transferred digitally, fractions (frames) were split into halves where even and odd signals can be separated.
 
 These even and odd fractions were then aligned and reconstructed to produce its corresponded tomogram. As a result, we feed cryoCARE image restoration training with localized unbiased even and odd tomograms.
