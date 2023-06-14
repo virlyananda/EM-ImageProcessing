@@ -26,7 +26,7 @@ On terminal, simply run like the example shown below: <br>
 
 **Walkthrough**
 
-Before executing this script, make sure all the supporting metafiles (.xf, .xtilt, .tlt) and parameters files (eraser.com, eraser.com, and tilt.com) are present in both even/odd directories.
+Before executing this script, make sure all the supporting metafiles (.xf, .xtilt, .tlt) and parameters files (eraser.com, newst.com, and tilt.com) are present in both even/odd directories.
 In our procedure, the content of each parameters files were adjusted (e.g., stack names, sizes, mode, etc.) before executing this step.
 
 *For 2D stacks comprising of >50 fractions(frames) with additional adjustments, please follow the 1-generateEVENODD.sh and 2-generateTomo.sh scripts to generate both tomograms.
