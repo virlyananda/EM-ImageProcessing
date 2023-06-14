@@ -21,7 +21,7 @@ We implemented 2D stacks alignment with **IMOD** and split our fractions with **
 
 #### **Walkthrough** #### 
 <br>
-**Step 1**: Go to the directory where your IMOD file and .TIFF fractions are stored.
+**Step 1**: Go to the directory where your IMOD file and .TIFF fractions are stored. <br>
 **Step 2**: Run the script on terminal, simply run like the example shown below: <br>
 
 **bash GenerateStacks.sh** **-m** [mdocfile].mdoc **-s** [stackname].mrc **-b** 8,2 **-g** [gainreffile].dm4 **-o** [output_directory] **-S** [sizeY,sizeX] **-p** [A,A,A] **-I** [pathwaytoIMODfile] **-M** [imodfilenames]
