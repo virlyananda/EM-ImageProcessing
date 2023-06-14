@@ -36,7 +36,7 @@ Please refer to **alignframes** website to check further information on the para
 
 **Step 1**: Confirm you have the original metafile copied to both even and odd directories.
   * Metafiles: .xf, .xtilt, .tlt (these files contain necessary rotations information)
-  * Parameter files: The .com files such as eraser.com, newst.com and tilt.com (these files contain necessary parameters to align and generate tomogram). <br>
+  * Parameter files: The .com files such as eraser.com, newst.com and tilt.com (these files contain necessary parameters to align and generate tomogram).<br>
 **Step 2**: Update necessary information within the .com files. Normally, adjustment in stack output names, tomogram names, GPU usage, mode, and stack sizes must be checked. Mode should be 2 (floating-type). <br>
 **Step 3**: Check whether your tomogram should be rotated. If so, you may continue. <br>
 **Step 4**: Run the script to generate even and odd tomograms. <br>
