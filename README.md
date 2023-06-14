@@ -145,6 +145,17 @@ Ribosome | EMD-2847 | 0.75525 Å
 Tomogram | Ecoli WT | 10.26 Å
 
 <img width="854" alt="Screenshot 2023-06-12 at 4 04 06 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/0a999203-c79c-4fe0-9416-ca2d94fbfb35">
-
+ 
 ***Figure 12. Visualization objective.*** 
-To be continued...
+Target pipeline for implementing template matching where 3D surface of ribosome can be merged with membranes 3D surfaces.
+
+In this process, we utilized several 3D software tools for bio-imaging analysis such as Amira, ChimeraX(ArtiaX), MATLAB-Dynamo scripts to integrate the overall models.
+
+**Software Tools/Packages Usage** <br>
+* **Amira**: Amira 3D Pro ThermoFisher was used to segment and refine(smooth) 3D surfaces of the cell envelope areas on our tomogram.
+*  **Dynamo(MATLAB)**: Dynamo Biozentrum, a cryo-tomography analysis package(also available on standalone) is used for particle picking and detection.
+*  **ChimeraX(ArtiaX)**: Final visualization of all models were done here.
+
+<img width="653" alt="Screenshot 2023-06-06 at 2 59 40 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/03cb9d81-02c2-4fcf-9ad2-c08267dd11d6">
+
+**Supporting scripts and walkthrough documentation can be viewed in corresponding files above.**
