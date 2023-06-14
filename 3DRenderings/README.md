@@ -29,7 +29,7 @@ dview(r);
 
 By this time, Dynamo GUI should pop up and let us visualize the inverted map in X,Y,Z orientations.
 
-![image](https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/718f06f1-081e-49cb-a0ef-f86c859abfaa)
+<img width="298" alt="image" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/be4937e0-3ae0-445b-8717-693bdf16ab2e">
 
 ```matlab:Code
 % Perform normalization on ROIs specified by binary mask.
@@ -47,7 +47,7 @@ dview(rbright);
 
 Here we can see that we created a binary mask out of the previous map:
 
-![image](https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/3e80dfa2-9228-40ab-b964-c4b24020b244)
+<img width="268" alt="image" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/1a025f5f-a436-4506-9539-420eba98477b">
 
 **Step 2: Create a triangulation**
 
@@ -95,9 +95,7 @@ end
 f.Color = 'k';
 ```
 
-![/Users/virly/beta_script/3DRenderings/README_images/image_2.png
-](README_images//Users/virly/beta_script/3DRenderings/README_images/image_2.png
-)
+<img width="584" alt="image" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/0f224499-5ba6-4839-aa77-42ebd80c7f23">
 
 Based on the visualization shown above, we can see the surface adjustment of the ribosome. We can use the surface where dust is removed and apply this to ribosomes detected on the tomogram.
 
@@ -137,9 +135,8 @@ dynamo_write_stl(tAllWT,'RibosomeEcoliWTMaxV3.stl');
 
 As we can see on the plot shown below, we see 3D surfaces of ribosome based on our tomogram. Color is based on Z stack where yellow indicates the most top view on Z and blue indicates most bottom view on Z stacks.
 
-![/Users/virly/beta_script/3DRenderings/README_images/image_3.png
-](README_images//Users/virly/beta_script/3DRenderings/README_images/image_3.png
-)
+<img width="478" alt="Screenshot 2023-06-14 at 12 50 06 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/b6b634e0-03fd-45c4-bc3e-7cdfadd3070b">
+
 
 **Step 5: Merging with other 3D surface objects**
 
