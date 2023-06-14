@@ -29,9 +29,7 @@ dview(r);
 
 By this time, Dynamo GUI should pop up and let us visualize the inverted map in X,Y,Z orientations.
 
-![/Users/virly/beta_script/3DRenderings/README_images/image_0.png
-](README_images//Users/virly/beta_script/3DRenderings/README_images/image_0.png
-)
+![image](https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/718f06f1-081e-49cb-a0ef-f86c859abfaa)
 
 ```matlab:Code
 % Perform normalization on ROIs specified by binary mask.
@@ -49,9 +47,7 @@ dview(rbright);
 
 Here we can see that we created a binary mask out of the previous map:
 
-![/Users/virly/beta_script/3DRenderings/README_images/image_1.png
-](README_images//Users/virly/beta_script/3DRenderings/README_images/image_1.png
-)
+![image](https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/3e80dfa2-9228-40ab-b964-c4b24020b244)
 
 **Step 2: Create a triangulation**
 
