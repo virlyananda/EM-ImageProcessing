@@ -1,8 +1,13 @@
-## **Generating Even and Odd Tomogram** ##
+## **Generating Even and Odd Tomograms** ##
 
 Author: Virly Y. Ananda <br>
 Affiliation: Department of Molecular Biology, Massachusetts General Hospital <br>
 Date: 06/13/2023
+
+**Main Steps on Generating a Tomogram**:
+* **2D Stacks Alignment**: This is where a list of .TIFF formatted fractions are generated into 2D stacks which then can be aligned accordingly. Certain views can be excluded in this phase.
+* **3D Reconstruction**: This is where tomogram is generated from the aligned 2D stacks.
+<br>
 
 Aligning 2D stacks after fractions(frames) acquisitions can be processed differently on whether the data needs further adjustments (e.g., *image size*, *pixel size*, *excluded views*, etc.) before proceeding to 3D reconstructions.
 
