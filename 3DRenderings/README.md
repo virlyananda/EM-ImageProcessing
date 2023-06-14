@@ -1,7 +1,7 @@
 # **Generating 3D Surface of Ribosome**
   
 
-Author: Virly Y. Ananda (MATLAB-Dynamo Embedded)
+Author: Virly Y. Ananda (MATLAB-Dynamo Integrated)
 
 Affiliation: Department of Molecular Biology, Massachusetts General Hospital
 
