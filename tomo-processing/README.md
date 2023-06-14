@@ -19,22 +19,28 @@ We implemented 2D stacks alignment with **IMOD** and split our fractions with **
 
 <br>
 
-**Walkthrough**
-
-On terminal, simply run like the example shown below: <br>
+#### **Walkthrough** ####
+<br>
+**Step 1**: Go to the directory where your IMOD file and .TIFF fractions are stored.
+**Step 2**: Run the script on terminal, simply run like the example shown below: <br>
 
 **bash GenerateStacks.sh** **-m** [mdocfile].mdoc **-s** [stackname].mrc **-b** 8,2 **-g** [gainreffile].dm4 **-o** [output_directory] **-S** [sizeY,sizeX] **-p** [A,A,A] **-I** [pathwaytoIMODfile] **-M** [imodfilenames]
+
+Please refer to **alignframes** website to check further information on the parameters.
 
 ### **Construct Even and Odd Tomograms** ###
 
 <img width="735" alt="Screenshot 2023-06-13 at 3 14 48 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/219425fc-ce97-44a7-826c-766dce9c1804">
 
-**Walkthrough**
-
-Before executing this script, make sure all the supporting metafiles (.xf, .xtilt, .tlt) and parameters files (eraser.com, newst.com, and tilt.com) are present in both even/odd directories.
-In our procedure, the content of each parameters files were adjusted (e.g., stack names, sizes, mode, etc.) before executing this step. In addition to this, the script is specifically designed to work with fractions acquired from Krios (MIT).
-
-Both even and odd tomograms must be in floating-point data type and with voxel size ~9-12A to be fed into cryoCARE training.
+#### **Walkthrough** ####
+<br>
+**Step 1**: Confirm you have the original metafile copied to both even and odd directories.
+  * Metafiles: .xf, .xtilt, .tlt (these files contain necessary rotations information)
+  * Parameter files: The .com files such as eraser.com, newst.com and tilt.com (these files contain necessary parameters to align and generate tomogram).
+**Step 2**: Update necessary information within the .com files. Normally, adjustment in stack output names, tomogram names, GPU usage, mode, and stack sizes must be checked. Mode should be 2 (floating-type).
+**Step 3**: Check whether your tomogram should be rotated. If so, you may continue.
+**Step 4**: Run the script to generate even and odd tomograms.
+**Step 5**: Feed even and odd tomograms to cryoCARE scripts. Please refer to cryoCARE official instructions.
 
 *For 2D stacks comprising of >50 fractions(frames) with additional adjustments, please follow the 1-generateEVENODD.sh and 2-generateTomo.sh scripts to generate both tomograms.
 
