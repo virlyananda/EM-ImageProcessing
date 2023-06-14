@@ -27,7 +27,9 @@ On terminal, simply run like the example shown below: <br>
 **Walkthrough**
 
 Before executing this script, make sure all the supporting metafiles (.xf, .xtilt, .tlt) and parameters files (eraser.com, newst.com, and tilt.com) are present in both even/odd directories.
-In our procedure, the content of each parameters files were adjusted (e.g., stack names, sizes, mode, etc.) before executing this step.
+In our procedure, the content of each parameters files were adjusted (e.g., stack names, sizes, mode, etc.) before executing this step. In addition to this, the script is specifically designed to work with fractions acquired from Krios (MIT).
+
+Both even and odd tomograms must be in floating-point data type and with voxel size ~9-12A to be fed into cryoCARE training.
 
 *For 2D stacks comprising of >50 fractions(frames) with additional adjustments, please follow the 1-generateEVENODD.sh and 2-generateTomo.sh scripts to generate both tomograms.
 
