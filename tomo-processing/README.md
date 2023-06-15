@@ -15,7 +15,7 @@ We implemented 2D stacks alignment with **IMOD** and split our fractions with **
 
 ### **Align Even and Odd 2D Stacks** ###
 
-<img width="710" alt="Screenshot 2023-06-13 at 2 07 14 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/484ce348-8cdf-4ff3-ae42-2fd809e1d719">
+<img width="710" alt="Screenshot 2023-06-13 at 2 07 14 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/1ca6bcf8-8caa-48e5-bddc-cd1a73f616f9">
 
 <br>
 
@@ -30,7 +30,7 @@ Please refer to **alignframes** website to check further information on the para
 
 ### **Construct Even and Odd Tomograms** ###
 
-<img width="735" alt="Screenshot 2023-06-13 at 3 14 48 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/219425fc-ce97-44a7-826c-766dce9c1804">
+<img width="742" alt="Screenshot 2023-06-14 at 8 30 02 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/1b2907f5-1c27-4916-8e25-b5e797e2e5f1">
 
 #### **Walkthrough** #### 
 
