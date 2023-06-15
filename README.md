@@ -36,7 +36,7 @@ Laborious Segmentation  | Amira (Pixel-based Classification)
 ### ***General Procedure*** ##
 Before generating volume images (tomogram), fractions (frames) are normally acquired from the microscope by tilting the sample in certain angles. These fractions are then processed through 3D reconstruction software (IMOD) in order to produce a tomogram.
 
-<img width="807" alt="Screenshot 2023-06-12 at 10 33 14 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/e8bfca57-737a-48d7-8e36-27d1055e95f5">
+<img width="807" alt="Screenshot 2023-06-12 at 10 33 14 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/81f60e05-06a9-4696-acab-2e3a69f1060d">
 
 ***Figure 1. General 3D reconstruction procedure.***
 Common procedure done after 3D reconstructions (tomogram) were performed. Additional filtering (denoising) is applied after tomogram has been generated.
@@ -51,7 +51,7 @@ We optimized the general procedure to obtain more accurate results for our datas
 
 These even and odd fractions were then aligned and reconstructed to produce its corresponded tomogram. As a result, we feed cryoCARE image restoration training with localized unbiased even and odd tomograms.
 
-<img width="918" alt="Screenshot 2023-06-12 at 10 33 53 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/d269465b-3bff-46e4-8d59-e0719d595c1a">
+<img width="918" alt="Screenshot 2023-06-12 at 10 24 51 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/f29f5e67-d9e5-421c-a594-143b1ea3c875">
 
 ***Figure 2. In-house tomogram restoration pipeline.*** Frames (fractions) were generated in full and were later split into even and odd. Even and odd 2D stacks were then aligned and 3D reconstructed through IMOD. Training was performed on floating-point image (tomogram) data type.<br>
 *Source: Virly Y. Ananda*
@@ -62,7 +62,8 @@ Even and odd tomograms were then feed into cryoCARE where Noise2Noise framework 
 
 ***Figure 3. Comparison of tomogram restorations through machine learning-based denoising platform.***(Left) Topaz Denoise3D prediction, (middle) raw tomogram, and (right) cryoCARE prediction. Tomograms were binned by 4.
 *Tomogram Acquisition: Paula P. Navarro*
-<img width="1363" alt="Screenshot 2023-06-09 at 9 12 30 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/2c918b2c-4e4f-4cbe-b40f-79b354f066e2">
+
+<img width="870" alt="Screenshot 2023-06-14 at 8 14 06 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/51dd5a73-645a-4103-8e06-41ede9ebbb73">
 
 Based on both predicted models, we noticed cryoCARE seems to show a more normalized contrast where ROIs are highlighted and background seems to be dampened. Topaz on the other hand seems to show high intensity of contrast on ROIs and certain artifacts while background is dampened as well.
 
@@ -82,7 +83,7 @@ To generate 3D renderings of ROIs, segmentations are normally performed to parti
 #### **Types of Segmentations** ####
 **A. Semantic Segmentations**: Classify objects by the average value of their pixel characteristics. <br>
 
-<img width="662" alt="Screenshot 2023-06-12 at 3 04 59 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/8ab683a4-9b8d-4ea3-8d37-e12ea4465930">
+<img width="662" alt="Screenshot 2023-06-12 at 3 04 59 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/9dc8130e-9762-4652-8624-87f476d6868c">
 
 ***Figure A. Objects are manually hand-segmented (traced) to classify each label.*** This procedure was repeated on 3 slices out of 249 slices on cryoCARE predicted restored tomogram.
 
@@ -97,13 +98,13 @@ Automated tracing were shown as a result of predicted segmentation. Based on the
 
 **B. Threshold-based Segmentation:** Classifying objects based on pixel intensity level.
 
-<img width="737" alt="Screenshot 2023-06-12 at 3 06 09 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/6bdd8509-4ba2-41aa-844f-5481f6de8d67">
+<img width="737" alt="Screenshot 2023-06-12 at 3 06 09 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/ed01ced2-ae6e-41e6-bf8b-d26d37d4e230">
 
 ***Figure 9. Auto-thresholding segmentation.*** TomoSegMemTV was performed to detect membranous areas on cryoCARE predicted tomogram. TomoSegMemTV, a toolkit designed to perform object detection by utilizing Tensor Voting algorithm was able to detect higher intensity areas while discarding the rest by adjusting thresholding values.
 
 **C. Manual Segmentation:** Classifying objects manually by hand tracing.<br>
 
-<img width="427" alt="Screenshot 2023-06-12 at 3 01 41 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/c624670a-6963-482a-9f3a-0736b509e5e5">
+<img width="424" alt="Screenshot 2023-06-14 at 8 10 35 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/15d99b80-e0f4-4f8e-9fc1-21af3aea8f05">
 
 ***Figure 10. Manual segmentation in refining 3D surfaces.*** Mitochondrial sub-compartments (inter membrane space in pink, crista lumen in magenta, and matrix in translucent grey). Manual segmentation is normally done on every 5 slices to maximize tracing interpolation across Z stacks. Surfaces were then generated, triangulations simplified, re-meshed, and smoothened on Amira.
 
@@ -117,7 +118,7 @@ Manual segmentation | ~5hr/tomogram | ~30 min/tomogram
 
 **Refinement Method** <br>
 
-<img width="979" alt="Screenshot 2023-06-12 at 3 13 53 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/6100c483-d61a-4195-823e-fe65e4eeee11">
+<img width="939" alt="Screenshot 2023-06-14 at 8 12 54 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/780d205c-39f1-4050-b62a-e8ea42c531a5">
 
 Our refinement method is described as follows: <br>
 * **Segmentation Label(s)**: This is normally a 2D binary format where objects are classified on each slices of the tomogram. You may adjust various sizes and coordinates with this file on any 3D visualization software. Once sizes and coordinates are adjusted, you can generate this as 3D surface(volume rendering).
@@ -146,7 +147,7 @@ Data | Description | Voxel Size
 Ribosome | EMD-2847 | 0.75525 Å
 Tomogram | Ecoli WT | 10.26 Å
 
-<img width="854" alt="Screenshot 2023-06-12 at 4 04 06 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/0a999203-c79c-4fe0-9416-ca2d94fbfb35">
+<img width="854" alt="Screenshot 2023-06-12 at 4 04 06 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/ea4e8f97-0012-42ec-a752-52654e4e9264">
  
 ***Figure 12. Visualization objective.*** 
 Target pipeline for implementing template matching where 3D surface of ribosome can be merged with membranes 3D surfaces.
@@ -158,6 +159,7 @@ In this process, we utilized several 3D software tools for bio-imaging analysis 
 *  **Dynamo(MATLAB)**: Dynamo Biozentrum, a cryo-tomography analysis package(also available on standalone) is used for particle picking and detection.
 *  **ChimeraX(ArtiaX)**: Final visualization of all models were done here.
 
-<img width="653" alt="Screenshot 2023-06-06 at 2 59 40 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/03cb9d81-02c2-4fcf-9ad2-c08267dd11d6">
+<img width="655" alt="Screenshot 2023-06-14 at 8 17 51 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/23dad29c-62da-44ac-add7-35520a93132f">
+                                                                 Navarrro, P.P.,et al.2023
 
 **Supporting scripts and walkthrough documentation can be viewed in corresponding files above.**
