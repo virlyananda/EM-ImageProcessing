@@ -159,7 +159,6 @@ In this process, we utilized several 3D software tools for bio-imaging analysis 
 *  **Dynamo(MATLAB)**: Dynamo Biozentrum, a cryo-tomography analysis package(also available on standalone) is used for particle picking and detection.
 *  **ChimeraX(ArtiaX)**: Final visualization of all models were done here.
 
-<img width="655" alt="Screenshot 2023-06-14 at 8 17 51 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/23dad29c-62da-44ac-add7-35520a93132f">
-Navarrro, P.P.,et al.2023
+<img width="655" alt="Screenshot 2023-06-14 at 8 17 51 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/23dad29c-62da-44ac-add7-35520a93132f"> <br> Navarrro, P.P.,et al.2023
 
 **Supporting scripts and walkthrough documentation can be viewed in corresponding files above.**
