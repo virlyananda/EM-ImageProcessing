@@ -29,9 +29,7 @@ dview(r);
 
 By this time, Dynamo GUI should pop up and let us visualize the inverted map in X,Y,Z orientations.
 
-![/Users/virly/beta_script/3DRenderings/README_images/image_0.png
-](README_images//Users/virly/beta_script/3DRenderings/README_images/image_0.png
-)
+<img width="298" alt="image" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/acb1ce76-d62d-443e-9997-e5b6ca501a12">
 
 ```matlab:Code
 % Perform normalization on ROIs specified by binary mask.
@@ -49,9 +47,8 @@ dview(rbright);
 
 Here we can see that we created a binary mask out of the previous map:
 
-![/Users/virly/beta_script/3DRenderings/README_images/image_1.png
-](README_images//Users/virly/beta_script/3DRenderings/README_images/image_1.png
-)
+<img width="268" alt="image" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/c8a0c121-e07d-457a-88d0-5f4512674a0f">
+
 
 **Step 2: Create a triangulation**
 
@@ -99,9 +96,7 @@ end
 f.Color = 'k';
 ```
 
-![/Users/virly/beta_script/3DRenderings/README_images/image_2.png
-](README_images//Users/virly/beta_script/3DRenderings/README_images/image_2.png
-)
+<img width="584" alt="image" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/771bdb48-feef-4639-936c-d7f854b8b5f5">
 
 Based on the visualization shown above, we can see the surface adjustment of the ribosome. We can use the surface where dust is removed and apply this to ribosomes detected on the tomogram.
 
@@ -141,9 +136,7 @@ dynamo_write_stl(tAllWT,'RibosomeEcoliWTMaxV3.stl');
 
 As we can see on the plot shown below, we see 3D surfaces of ribosome based on our tomogram. Color is based on Z stack where yellow indicates the most top view on Z and blue indicates most bottom view on Z stacks.
 
-![/Users/virly/beta_script/3DRenderings/README_images/image_3.png
-](README_images//Users/virly/beta_script/3DRenderings/README_images/image_3.png
-)
+<img width="634" alt="Screenshot 2023-06-14 at 8 41 19 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/23e16ceb-7ae8-4a94-a85d-7a13057fc850">
 
 **Step 5: Merging with other 3D surface objects**
 
