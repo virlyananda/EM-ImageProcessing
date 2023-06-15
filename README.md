@@ -3,7 +3,7 @@
 ## Cryo-Electron Tomography (ET) ##
 Authors: Virly Y. Ananda, Paula P. Navarro<br>Date: 06/09/2023<br>Affiliation: Massachusetts General Hospital, Department of Molecular Biology
 
-<img width="665" alt="Screenshot 2023-06-13 at 9 04 40 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/f6e842a0-082b-4833-be09-62e55d1f571f">
+<img width="665" alt="Screenshot 2023-06-13 at 9 04 40 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/51f87257-b5be-490f-b933-9cf8ef5519b0">
 
 Cryo-Electron Tomography (ET) is a subfield of Cryo-Electron Microscopy (EM) where images are tilted during acquisition to form a three-dimensional visualization of the specimen. While this technique has been around to study organelles biological formations in native condition, volume images (tomogram) produced by Cryo-ET also came with major issues that limit our interpretation of the data. However, due to certain side effects caused during image acquisition, additional computational processing are necessary to obtain accurate analysis.
 
