@@ -74,6 +74,7 @@ Platform  | Running Time | Platform | Image (Data) Type
 Topaz Denoise3D | 30 min. (Prediction only) | Transfer learning | Floating point (IMOD: Mode 2)
 cryoCARE  | ~3 hrs. (Training and prediction) | Training from scratch | Floating point (IMOD: Mode 2)
 
+**Both platforms utilize UNET Noise2Noise framework.*
 **Training performance depends on GPUs condition.* <br>
 **Computational hardware used: **NVIDIA GeForce GTX 1080 Ti with CUDA 11.4.***
 
