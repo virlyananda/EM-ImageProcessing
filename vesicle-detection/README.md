@@ -12,7 +12,7 @@ Implementing object detection on 2D TEM images can be challenging due to complex
 - Ilastik [2] <br>
 - Jupyter Notebook
 
-#### Pre-Processing: Qualityu  ####
+#### Pre-Processing: Quality Check  ####
 
 Understanding the pixel intesities of raw TEM images must be done to subtract the uneven background shades. To do this, we performed 1-2 images intensity analysis followed by batch convertsion of the background subtraction technique to the rest of the images. <br>
 
