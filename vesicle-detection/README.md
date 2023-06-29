@@ -411,4 +411,5 @@ vesicle2 = img_as_ubyte(dilImage2)
 imsave("vesicle_dil1.png", vesicle1)
 imsave("vesicle_dil2.png", vesicle2)
 ```
-**This workflow is still being developed**
+**This workflow is still being developed** <br>
+Ilastik is currently the go to software for collecting pixel-based detection between targeted vesicles, background, and other artifacts present on the images.
