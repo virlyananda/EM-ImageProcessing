@@ -1,6 +1,6 @@
 ### Detecting Vesicles: Part I ###
 
-Author: Virly Y. Ananda <br>
+Author(s): Virly Y. Ananda <br>
 Affiliation: Department of Molecular Biology, Massachusetts General Hospital<br>
 
 Implementing object detection on 2D TEM images can be challenging due to complex features of the region of interests (ROIs). This is because most of the TEM images we collected produced uneven shades on the background, and foreground features vary based on sample preparation. This documentation provides a walkthough on how we can segment out our targeted vesicles while minimizing false positives upon implementing automatic segmentation. <br>
