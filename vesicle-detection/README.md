@@ -1,8 +1,9 @@
 ### Detecting Vesicles: Part I ###
 
 Author: Virly Y. Ananda <br>
+Affiliation: Department of Molecular Biology, Massachusetts General Hospital<br>
 
-Implementing object detection on 2D TEM images can be challenging due to complex features of the region of interests (ROIs). This is because most of the TEM images we collected produced uneven shades on the background, and foreground features vary based on sample preparation. This documentation provides a walkthough on how we can segment out our targeted vesicles while minimizing false positives. <br>
+Implementing object detection on 2D TEM images can be challenging due to complex features of the region of interests (ROIs). This is because most of the TEM images we collected produced uneven shades on the background, and foreground features vary based on sample preparation. This documentation provides a walkthough on how we can segment out our targeted vesicles while minimizing false positives upon implementing automatic segmentation. <br>
 
 --------
 
@@ -11,11 +12,14 @@ Implementing object detection on 2D TEM images can be challenging due to complex
 - Ilastik [2] <br>
 - Jupyter Notebook
 
-#### Pre-Processing ####
+#### Pre-Processing: Qualityu  ####
 
+Understanding the pixel intesities of raw TEM images must be done to subtract the uneven background shades. To do this, we performed 1-2 images intensity analysis followed by batch convertsion of the background subtraction technique to the rest of the images. <br>
+
+Note: It is important to process the data in a format where image quality can be preserved.
 
 ```python
-# Import necessary packages
+# Import necessary packages: It is best if you have the packages installed in a conda environment.
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -32,44 +36,40 @@ from skimage.color import rgb2gray
 ```python
 # Convert to float: Important for subtraction later which won't work with uint8
 from skimage import io
-image = img_as_float(io.imread('/home/ananda/Downloads/vesicle2.png'))
-```
 
+# Load the image from local directory:
+image1 = img_as_float(io.imread('/home/ananda/Downloads/vesicle2.png'))
+image1_gaus = gaussian_filter(image1, 1)
 
-```python
-#image = img_as_float(data.coins())
-image = gaussian_filter(image, 1)
-
-seed = np.copy(image)
+seed = np.copy(image1)
 seed[1:-1, 1:-1] = image.min()
-mask = image
+mask1 = image1
 
-dilated = reconstruction(seed, mask, method='dilation')
+dilated1 = reconstruction(seed, mask1, method='Dilated')
 ```
 
 
 ```python
-# Subtracting the dilated image leaves an image with just the coins and a flat, black background, as shown below.
+# Subtracting the dilated image leaves an image with just the ROIs and a flat, black background, as shown below.
 fig, (ax0, ax1, ax2) = plt.subplots(nrows=1,
                                     ncols=3,
                                     figsize=(8, 2.5),
                                     sharex=True,
                                     sharey=True)
 
-ax0.imshow(image, cmap='gray')
-ax0.set_title('original image')
+ax0.imshow(image1, cmap='gray')
+ax0.set_title('Raw Image')
 ax0.axis('off')
 
-ax1.imshow(dilated, vmin=image.min(), vmax=image.max(), cmap='gray')
-ax1.set_title('dilated')
+ax1.imshow(dilated1, vmin=image1.min(), vmax=image1.max(), cmap='gray')
+ax1.set_title('Dilated')
 ax1.axis('off')
 
-final_image = image - dilated
+final_image1 = image1 - dilated1
 
-#ax2.imshow(image - dilated, cmap='gray')
-ax2.imshow(final_image, cmap='gray')
-#ax2.imshow(final_image, cmap='gray')
-ax2.set_title('image - dilated')
+ax2.imshow(final_image1, cmap='gray')
+
+ax2.set_title('image1 - dilated1')
 ax2.axis('off')
 
 fig.tight_layout()
@@ -83,33 +83,33 @@ fig.tight_layout()
 
 
 ```python
-# Obtain the final image
-greyFinalImage = ax2.imshow(final_image, cmap='gray')
-greyImage = greyFinalImage.get_array()
+# Obtain the final image1
+greyFinalImage1 = ax2.imshow(final_image1, cmap='gray')
+greyImage1 = greyFinalImage1.get_array()
 ```
 
 
 ```python
 # Obtain dilated image
-dilatedImage1 = ax2.imshow(dilated, vmin=image.min(), vmax=image.max(), cmap='gray')
+dilatedImage1 = ax2.imshow(dilated1, vmin=image1.min(), vmax=image1.max(), cmap='gray')
 dilImage1 = dilatedImage1.get_array()
 ```
 
 
 ```python
+# Load 2nd image
 image2 = img_as_float(io.imread('/home/ananda/Downloads/vesicles.png'))
 ```
 
 
 ```python
-#image = img_as_float(data.coins())
 image2 = gaussian_filter(image2, 1)
 
 seed = np.copy(image2)
 seed[1:-1, 1:-1] = image2.min()
-mask = image2
+mask2 = image2
 
-dilated2 = reconstruction(seed, mask, method='dilation')
+dilated2 = reconstruction(seed, mask2, method='Dilated')
 ```
 
 
@@ -122,11 +122,11 @@ fig, (ax0, ax1, ax2) = plt.subplots(nrows=1,
                                     sharey=True)
 
 ax0.imshow(image2, cmap='gray')
-ax0.set_title('original image')
+ax0.set_title('Raw Image')
 ax0.axis('off')
 
 ax1.imshow(dilated2, vmin=image2.min(), vmax=image2.max(), cmap='gray')
-ax1.set_title('dilated')
+ax1.set_title('Dilated')
 ax1.axis('off')
 
 final_image2 = image2 - dilated2
@@ -164,7 +164,7 @@ dilImage2 = dilImageplot2.get_array()
 
 
 ```python
-# Import necessary modules/packages
+# Import necessary modules/packages (If you already imported some of the modules previously, you don't have to import it again)
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
@@ -182,7 +182,7 @@ from skimage.filters import rank
 ```python
 matplotlib.rcParams['font.size'] = 9
 
-# Create a function:
+# Create a function where we could seethe pixel instinsities on our processed images:
 def plot_img_and_hist(imagedata, axes, bins=256):
     """Plot an image along with its histogram and cumulative histogram.
 
@@ -235,8 +235,8 @@ axes[1, 1] = plt.subplot(2, 3, 5)
 axes[1, 2] = plt.subplot(2, 3, 6)
 
 ax_img, ax_hist, ax_cdf = plot_img_and_hist(img1, axes[:, 0])
-ax_img.set_title('Low contrast image')
-ax_hist.set_ylabel('Number of pixels')
+ax_img.set_title('Low Contrast Image')
+ax_hist.set_ylabel('Number of Pixels')
 
 ax_img, ax_hist, ax_cdf = plot_img_and_hist(img_rescale1, axes[:, 1])
 ax_img.set_title('Global equalise')
@@ -281,7 +281,7 @@ axes[1, 1] = plt.subplot(2, 3, 5)
 axes[1, 2] = plt.subplot(2, 3, 6)
 
 ax_img, ax_hist, ax_cdf = plot_img_and_hist(img2, axes[:, 0])
-ax_img.set_title('Low contrast image')
+ax_img.set_title('Low Contrast Image')
 ax_hist.set_ylabel('Number of pixels')
 
 ax_img, ax_hist, ax_cdf = plot_img_and_hist(img_rescale2, axes[:, 1])
@@ -303,8 +303,8 @@ fig.tight_layout()
 
 
 ```python
-# Load an example image
-#img = img_as_ubyte(data.moon())
+# Load our second image
+
 img = img_as_ubyte(io.imread('/home/ananda/Downloads/vesicle2.png'))
 
 # Global equalize
@@ -351,7 +351,7 @@ fig.tight_layout()
 
 ```python
 # Load an example image
-#img = img_as_ubyte(data.moon())
+
 img = img_as_ubyte(greyImage)
 
 # Global equalize
@@ -395,7 +395,7 @@ fig.tight_layout()
     
 
 
-### Segmentation
+### Save Images for Segmentation
 
 
 ```python
@@ -410,7 +410,3 @@ imsave("vesicle_dil1.png", vesicle1)
 imsave("vesicle_dil2.png", vesicle2)
 ```
 
-
-```python
-
-```
