@@ -15,7 +15,7 @@ Implementing object detection on 2D TEM images can be challenging due to complex
 
 #### Pre-Processing: Quality Check  ####
 
-Understanding the pixel intesities of raw TEM images must be done to subtract the uneven background shades. To do this, we performed 1-2 images intensity analysis followed by batch convertsion of the background subtraction technique to the rest of the images. <br>
+Understanding the pixel intesities of raw TEM images must be done to subtract the uneven background shades. To do this, we performed 1-2 images intensity analysis followed by batch conversion of the background subtraction technique to the rest of the images. <br>
 
 Note: It is important to process the data in a format where image quality can be preserved.
 
