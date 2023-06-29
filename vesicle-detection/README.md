@@ -10,6 +10,7 @@ Implementing object detection on 2D TEM images can be challenging due to complex
 #### Imaging Software Requirements ####
 - FIJI (FIJI is just ImageJ) [1] <br>
 - Ilastik [2] <br>
+- Napari (**Optional) [3] <br>
 - Jupyter Notebook
 
 #### Pre-Processing: Quality Check  ####
