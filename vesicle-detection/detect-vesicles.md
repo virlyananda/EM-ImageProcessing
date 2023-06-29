@@ -199,7 +199,6 @@ def plot_img_and_hist(imagedata, axes, bins=256):
 
 ```python
 # Load an example image
-#img = img_as_ubyte(data.moon())
 img1 = img_as_ubyte(io.imread('/home/ananda/Downloads/vesicles.png'))
 
 # Global equalize
@@ -246,7 +245,6 @@ fig.tight_layout()
 
 ```python
 # Load an example image
-#img = img_as_ubyte(data.moon())
 img2 = img_as_ubyte(greyImage2)
 
 # Global equalize
@@ -397,11 +395,6 @@ vesicle2 = img_as_ubyte(dilImage2)
 
 imsave("vesicle_dil1.png", vesicle1)
 imsave("vesicle_dil2.png", vesicle2)
-#rb_image = imread("test.png")
-#print("original image")
-#print(image)
-#print("read back image")
-#print(rb_image)
 ```
 
 
