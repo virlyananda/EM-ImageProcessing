@@ -397,7 +397,7 @@ fig.tight_layout()
 
 ### Save Images for Segmentation
 
-For segmentation purposes, we will be using the images where backgrounds have been flattened with black background. This would decrease the false poisitives when detecting ROIs.
+For segmentation purposes, we will be using the images where backgrounds have been flattened with black background. This would decrease the false positives when detecting ROIs.
 
 ```python
 # Save adjusted images to local directory
@@ -410,4 +410,4 @@ vesicle2 = img_as_ubyte(dilImage2)
 imsave("vesicle_dil1.png", vesicle1)
 imsave("vesicle_dil2.png", vesicle2)
 ```
-
+**This workflow is still being developed**
