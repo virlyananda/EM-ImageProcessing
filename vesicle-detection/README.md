@@ -1,4 +1,17 @@
-### Pre-Process Image ###
+### Detecting Vesicles: Part I ###
+
+Author: Virly Y. Ananda <br>
+
+Implementing object detection on 2D TEM images can be challenging due to complex features of the region of interests (ROIs). This is because most of the TEM images we collected produced uneven shades on the background, and foreground features vary based on sample preparation. This documentation provides a walkthough on how we can segment out our targeted vesicles while minimizing false positives. <br>
+
+--------
+
+#### Imaging Software Requirements ####
+- FIJI (FIJI is just ImageJ) [1] <br>
+- Ilastik [2] <br>
+- Jupyter Notebook
+
+#### Pre-Processing ####
 
 
 ```python
