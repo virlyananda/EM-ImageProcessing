@@ -397,6 +397,7 @@ fig.tight_layout()
 
 ### Save Images for Segmentation
 
+For segmentation purposes, we will be using the images where backgrounds have been flattened with black background. This would decrease the false poisitives when detecting ROIs.
 
 ```python
 # Save adjusted images to local directory
