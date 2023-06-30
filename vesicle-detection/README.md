@@ -132,9 +132,7 @@ ax1.axis('off')
 
 final_image2 = image2 - dilated2
 
-#ax2.imshow(image - dilated, cmap='gray')
 ax2.imshow(final_image2, cmap='gray')
-#ax2.imshow(final_image, cmap='gray')
 ax2.set_title('image2 - dilated2')
 ax2.axis('off')
 
