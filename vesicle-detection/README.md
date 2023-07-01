@@ -12,7 +12,7 @@ Implementing object detection on 2D TEM images can be challenging due to complex
 - Napari (**Optional) [3] <br>
 - Jupyter Notebook
 
-#### Pre-Processing: Quality Check  ####
+#### Pre-Processing: Quality Control  ####
 
 Understanding the pixel intesities of raw TEM images must be done to subtract the uneven background shades. To do this, we performed 1-2 images intensity analysis followed by batch conversion of the background subtraction technique to the rest of the images. <br>
 
