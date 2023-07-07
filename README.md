@@ -186,7 +186,7 @@ Detect targeted vesicles on uneven shades of background of negative-stained imag
  <br>
  <br>
  <br>
- ![vesicle-detect-v1](https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/9ff776bf-3c61-42c9-bbce-e1333814d2fe) <br>
- Figure 1. Current probability of targeted vesicles in yellow, artifacts in red, and background in blue. Images were classified after background subtraction based on **Rolling Ball Algorithm** with a radius of 95 is implemented.
+ ![vesicle-pipelinev3](https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/a2ddf9e0-388f-417a-8bad-ebcc43ca2ca8) <br>
+Figure 1. Current probability of targeted vesicles in yellow, artifacts in red, and background in blue. Images were classified after background subtraction based on **Rolling Ball Algorithm** with a radius of 95 is implemented.
 
 **Prospect**: More training dataset required to implement batch predict on testing dataset. False positives (grid background wrinkles can be seen around vesicles area in yellow) should be decreased (eliminated if possible). This is an on-going work...
