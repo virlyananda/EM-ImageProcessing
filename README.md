@@ -181,7 +181,8 @@ Here we provide a walkthrough on detecting objects such as vesicles on 2D TEM im
 **Objective** <br>
 Detect targeted vesicles on uneven shades of background of negative-stained images and measure vesicles morphology across hundreds of images. <br>
 
-![TEM object classification pipelineV1](https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/732a68af-0030-4124-bbe0-69dd060796a1)
+![TEM-vesicle-pipeline-v2](https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/de0dfbe5-878b-46e5-9e44-0be002338ee4)
+
  <br>
  <br>
  <br>
