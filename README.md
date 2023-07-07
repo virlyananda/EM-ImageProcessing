@@ -164,9 +164,10 @@ In this process, we utilized several 3D software tools for bio-imaging analysis 
 
 <br>
 
-**Customized Pipeline** <br>
+**Customized Complete Pipeline** <br>
 
-[Insert customized pipeline for ribosome localization] <br>
+![Cryo-ET-customized-pipelinevya](https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/508adccd-bd41-4055-a43a-fb37d1f16972)
+ <br>
 
 # Transmission Electron Microscopy (TEM) Object Detection #
 
