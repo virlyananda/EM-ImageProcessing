@@ -158,7 +158,10 @@ In this process, we utilized several 3D software tools for bio-imaging analysis 
 **Software Tools/Packages Usage** <br>
 * **Amira**: Amira 3D Pro ThermoFisher was used to segment and refine(smooth) 3D surfaces of the cell envelope areas on our tomogram.
 *  **Dynamo(MATLAB)**: Dynamo Biozentrum, a cryo-tomography analysis package(also available on standalone) is used for particle picking and detection.
-*  **ChimeraX(ArtiaX)**: Final visualization of all models were done here.
+*  **ChimeraX(ArtiaX)**: Final visualization of all models were done here. <br>
+
+**Warning** <br>
+Generating .STL file produces large size of data which could cause memory corruption. To avoid this issue, we only generated .STL files for 3D renderings that could be simplified such as cell envelopes and other membrane regions. As for ribosomes, it is best to save table (.tbl) format from Dynamo (MATLAB) containing the correct X,Y,Z coordinates (which you can view on ChimeraX). You may use ChimeraX (ArtiaX) to merge segmentations and ribosome 3D surfaces.
 
 **Supporting scripts and walkthrough documentation can be viewed in corresponding files above.** <br>
 
