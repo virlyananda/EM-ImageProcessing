@@ -160,4 +160,31 @@ In this process, we utilized several 3D software tools for bio-imaging analysis 
 *  **Dynamo(MATLAB)**: Dynamo Biozentrum, a cryo-tomography analysis package(also available on standalone) is used for particle picking and detection.
 *  **ChimeraX(ArtiaX)**: Final visualization of all models were done here.
 
-**Supporting scripts and walkthrough documentation can be viewed in corresponding files above.**
+**Supporting scripts and walkthrough documentation can be viewed in corresponding files above.** <br>
+
+<br>
+
+**Customized Pipeline** <br>
+
+[Insert customized pipeline for ribosome localization] <br>
+
+# Transmission Electron Microscopy (TEM) Object Detection #
+
+Authors: Virly Y. Ananda<br>Date: 06/13/2023<br>Affiliation: Massachusetts General Hospital, Department of Molecular Biology <br>
+
+**Transmission Electron Microscopy (TEM)** is a microscopy technique in which electron of beam passes through the sample in order to obtain a projection of a specimen. This has become the most fundamental technique in the EM community to better understand how basic EM works.
+<br>
+
+Here we provide a walkthrough on detecting objects such as vesicles on 2D TEM images. The images shown in this documentation are based on negative-stained samples of Prominin-1 (Prom1, CD133) extracellular vesicles and Tweety-homolog1 (Tthy1) vesicles. <br>
+
+**Objective** <br>
+Detect targeted vesicles on uneven shades of background of negative-stained images and measure vesicles morphology across hundreds of images. <br>
+
+![TEM object classification pipelineV1](https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/732a68af-0030-4124-bbe0-69dd060796a1)
+ <br>
+ <br>
+ <br>
+ ![vesicle-detect-v1](https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/9ff776bf-3c61-42c9-bbce-e1333814d2fe) <br>
+ Figure 1. Current probability of targeted vesicles in yellow, artifacts in red, and background in blue. Images were classified after background subtraction based on **Rolling Ball Algorithm** with a radius of 95 is implemented.
+
+**Prospect**: More training dataset required to implement batch predict on testing dataset. False positives (grid background wrinkles can be seen around vesicles area in yellow) should be decreased (eliminated if possible). This is an on-going work...
