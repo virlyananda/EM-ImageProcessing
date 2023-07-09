@@ -154,7 +154,11 @@ Tomogram | Ecoli WT | 10.26 Å
 ***Figure 12. Visualization objective.*** 
 Target pipeline for implementing template matching where 3D surface of ribosome can be merged with membranes 3D surfaces.
 
-In this process, we utilized several 3D software tools for bio-imaging analysis such as Amira, ChimeraX(ArtiaX), MATLAB-Dynamo scripts to integrate the overall models.
+In this process, we utilized several 3D software tools for bio-imaging analysis such as Amira, ChimeraX(ArtiaX), MATLAB-Dynamo scripts to integrate the overall models. <br>
+
+**Customized Ribosome Localization Pipeline** <br>
+<img width="1021" alt="Screenshot 2023-07-09 at 12 57 43 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/1797529d-7274-4ee7-adb9-226025186e79">
+<br>
 
 **Software Tools/Packages Usage** <br>
 * **Amira**: Amira 3D Pro ThermoFisher was used to segment and refine(smooth) 3D surfaces of the cell envelope areas on our tomogram.
