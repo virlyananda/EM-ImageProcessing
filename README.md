@@ -156,8 +156,9 @@ Target pipeline for implementing template matching where 3D surface of ribosome 
 
 In this process, we utilized several 3D software tools for bio-imaging analysis such as Amira, ChimeraX(ArtiaX), MATLAB-Dynamo scripts to integrate the overall models. <br>
 
-**Customized Ribosome Localization Pipeline** <br>
-<img width="1021" alt="Screenshot 2023-07-09 at 12 57 43 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/1797529d-7274-4ee7-adb9-226025186e79">
+**Customized Ribosome Localization Pipeline**
+<br>
+<img width="992" alt="Screenshot 2023-07-09 at 1 00 46 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/2f2a0adc-2636-4881-a658-8fda75ef5a34">
 <br>
 
 **Software Tools/Packages Usage** <br>
@@ -172,7 +173,8 @@ Generating .STL file produces large size of data which could cause memory corrup
 
 <br>
 
-**Customized Complete Pipeline** <br>
+**Customized Complete Pipeline**
+ <br>
 
 ![Cryo-ET-customized-pipelinevya](https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/508adccd-bd41-4055-a43a-fb37d1f16972)
  <br>
