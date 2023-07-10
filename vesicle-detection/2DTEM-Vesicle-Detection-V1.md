@@ -67,8 +67,8 @@ fig.tight_layout()
 ```
 
 
-    
-![png](output_2_0.png)
+![output_2_0](https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/5987be71-ac96-488e-bce7-2e1cda48b0e3)
+
     
 
 
