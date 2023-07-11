@@ -129,7 +129,7 @@ Our refinement method is described as follows: <br>
 *  **Remesh Triangulation**: To create a mesh out of the re-adjusted triangulations, we selected remesh on Amira. 
 *  **Smooth Triangulation Mesh**: To improvise our surfaces features, we performed smoothing on Amira. This is for visualization purposes.
 
-## **3D Surfaces/Renderings on Single Particle and Electron Tomography##
+## **3D Surfaces/Renderings on Single Particle and Electron Tomography ##
 A 3D surface (rendering) comprises of triangulation faces that made up 3D projection. Because it is a finalized model, it would be difficult to adjust coordinates or sizes when viewed on other 3D softwares.
 
 To avoid this problem, we recommend to always use the label formats to adjust any coordinates/sizes.
