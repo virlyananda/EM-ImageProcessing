@@ -129,7 +129,7 @@ Our refinement method is described as follows: <br>
 *  **Remesh Triangulation**: To create a mesh out of the re-adjusted triangulations, we selected remesh on Amira. 
 *  **Smooth Triangulation Mesh**: To improvise our surfaces features, we performed smoothing on Amira. This is for visualization purposes.
 
-## **3D Surface (Rendering)** ##
+## **3D Surfaces/Renderings on Single Particle and Electron Tomography##
 A 3D surface (rendering) comprises of triangulation faces that made up 3D projection. Because it is a finalized model, it would be difficult to adjust coordinates or sizes when viewed on other 3D softwares.
 
 To avoid this problem, we recommend to always use the label formats to adjust any coordinates/sizes.
@@ -178,6 +178,8 @@ Generating .STL file produces large size of data which could cause memory corrup
 
 ![Cryo-ET-customized-pipelinevya](https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/508adccd-bd41-4055-a43a-fb37d1f16972)
  <br>
+
+**Due to the on going process of the publications, most of the results can only be accessed by request. Please request Virly on the most updated results of the pipeline.**
 
 # Transmission Electron Microscopy (TEM) Object Detection #
 
