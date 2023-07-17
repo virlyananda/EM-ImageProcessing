@@ -122,9 +122,7 @@ Manual segmentation | ~5hr/tomogram | ~30 min/tomogram
 <img width="748" alt="Screenshot 2023-07-09 at 11 49 21 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/8fe56f89-5399-4ad0-9847-31e18a586feb">
 
 <br>
-
-<img width="463" alt="Screenshot 2023-07-17 at 9 23 42 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/53df26c9-8210-406f-bead-b924f786d8c6"><img width="399" alt="Screenshot 2023-07-17 at 9 14 10 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/fb0ce3d2-fe43-422b-b978-af9ac043531f">
-
+<img width="869" alt="Screenshot 2023-07-17 at 9 28 49 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/6e59efa3-1082-45b7-86c4-884df73fb5b8">
 <br>
 
 Our refinement method is described as follows: <br>
