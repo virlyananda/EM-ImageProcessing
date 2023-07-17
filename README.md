@@ -123,8 +123,7 @@ Manual segmentation | ~5hr/tomogram | ~30 min/tomogram
 
 <br>
 
-<img width="399" alt="Screenshot 2023-07-17 at 9 14 10 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/997716c1-7d79-4495-a7e4-87c057bba269"> <img width="463" alt="Screenshot 2023-07-17 at 9 23 42 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/6e2fb5bc-7296-4129-882c-bb1beca92aeb">
-
+<img width="463" alt="Screenshot 2023-07-17 at 9 23 42 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/6e2fb5bc-7296-4129-882c-bb1beca92aeb"> <img width="399" alt="Screenshot 2023-07-17 at 9 14 10 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/362e9dc8-9561-4e81-bc7e-035a5f0ae4f7">
 
 <br>
 
