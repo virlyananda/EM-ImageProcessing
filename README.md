@@ -121,6 +121,11 @@ Manual segmentation | ~5hr/tomogram | ~30 min/tomogram
 
 <img width="748" alt="Screenshot 2023-07-09 at 11 49 21 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/8fe56f89-5399-4ad0-9847-31e18a586feb">
 
+<br>
+
+<img width="399" alt="Screenshot 2023-07-17 at 9 14 10 AM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/997716c1-7d79-4495-a7e4-87c057bba269">
+
+<br>
 
 Our refinement method is described as follows: <br>
 * **Segmentation Label(s)**: This is normally a 2D binary format where objects are classified on each slices of the tomogram. You may adjust various sizes and coordinates with this file on any 3D visualization software. Once sizes and coordinates are adjusted, you can generate this as 3D surface(volume rendering).
