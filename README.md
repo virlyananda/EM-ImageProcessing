@@ -182,7 +182,7 @@ Generating .STL file produces large size of data which could cause memory corrup
 ![Cryo-ET-customized-pipelinevya](https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/508adccd-bd41-4055-a43a-fb37d1f16972)
  <br>
 
-**Due to the on going process of the publications, most of the results can only be accessed by request. Please request Virly on the most updated results of the pipeline.**
+**Due to the on going process of the publication, most of the results can only be accessed by request. Please request Virly on the most updated results of the pipeline.**
 
 # Transmission Electron Microscopy (TEM) Object Detection #
 
