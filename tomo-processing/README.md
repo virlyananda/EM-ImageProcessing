@@ -167,8 +167,9 @@ Inside **even** and **odd** directories: <br>
 
     On terminal, run **vim eraser.com** or **vi eraser.com** <br>
 
-    [<img width="484" alt="Screenshot 2023-07-21 at 3 36 55 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/bc6283ca-93cc-47d3-8b33-be0a58004065">
+    <img width="484" alt="Screenshot 2023-07-21 at 3 36 55 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/bc6283ca-93cc-47d3-8b33-be0a58004065"> <br>
 
+    Once adjusted, save the file by pressing **Esc** then **:x**
 
 2. **Adjust newst.com** <br>
     Inside **even** and **odd** directories: <br>
