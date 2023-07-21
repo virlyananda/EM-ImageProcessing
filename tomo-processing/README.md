@@ -167,7 +167,7 @@ Inside **even** and **odd** directories: <br>
 
     On terminal, run **vim eraser.com** or **vi eraser.com** <br>
 
-    <img width="484" alt="Screenshot 2023-07-21 at 3 36 55 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/bc6283ca-93cc-47d3-8b33-be0a58004065"> <br>
+    <img width="596" alt="Screenshot 2023-07-21 at 4 03 27 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/2eaa8904-b91b-4705-adda-0970a16aa431"> <br>
 
     Once adjusted, save the file by pressing **Esc** then **:x**
 
