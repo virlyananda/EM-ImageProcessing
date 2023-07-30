@@ -210,7 +210,7 @@ Figure 1. Current probability of targeted vesicles in yellow, artifacts in red, 
 **Prospect**: More training dataset required to implement batch predict on testing dataset. False positives (grid background wrinkles can be seen around vesicles area in yellow) should be decreased (eliminated if possible). This is an on-going work... <br>
 <br>
 
-# Focused Ion Beam-Scanning Electron Microscopy (FIB-SEM) # <br>
+# Focused Ion Beam-Scanning Electron Microscopy (FIB-SEM) <br>
 
 <img width="789" alt="Screenshot 2023-07-29 at 8 31 12 PM" src="https://github.com/virlyananda/EM-ImageProcessing/assets/70969092/7b9b0e4a-fb43-4bde-8743-e8aefd16de89">
 
